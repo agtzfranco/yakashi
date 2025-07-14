@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAKASHI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Logo pantalla completa -->
+    <div class="logo-container">
+        <img src="yakashi1.png" alt="YAKASHI Full Logo">
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <header class="header">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#store">Store</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </header>
+
+        <section class="hero">
+            <h1>YAKASHI</h1>
+            <p>Nuevo álbum disponible ahora</p>
+            <a href="#music" class="cta-button">Escuchar</a>
+        </section>
+
+        <section id="music" class="music-section">
+            <h2>DISCOGRAFIA</h2>
+            <div class="album-grid"></div>
+        </section>
+
+        <section id="tour" class="tour-section">
+            <h2>TOUR</h2>
+            <div class="tour-dates"></div>
+        </section>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.instagram.com/yakashix/"><img src="images/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UCjMnxXTttXbOG4d0O92bk-w"><img src="images/youtube.svg" alt="Youtube"></a>
+                <a href="https://open.spotify.com/intl-es/artist/5dpxMhY3sbmbJmFsLKCTND?si=0ar3hXLJRhyB2bZXmSxRug"><img src="spotify.svg" alt= "Spotify"></a>
+            </div>
+            <p>&copy; 2025 YAKASHI</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
